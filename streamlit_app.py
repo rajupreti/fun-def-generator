@@ -8,7 +8,7 @@ import math
 
 load_dotenv()
 api_key = os.getenv("MISTRAL_API_KEY")
-model = "mistral-medium-latest"
+model = "mistral-small-latest"
 
 spin_the_wheel = [
     "as a cooking recipe",
@@ -154,7 +154,7 @@ if 'show_result' not in st.session_state:
     st.session_state.show_result = False
 
 # Box 1: User Input
-st.subheader("📝 Step 1: Enter Your Topic")
+st.subheader("📝 Enter Your Topic")
 topic = st.text_input("What do you want to learn about?", placeholder="e.g., quantum physics, black holes, AI...")
 
 # Display the wheel
@@ -195,7 +195,7 @@ if topic:
             st.session_state.visual_rotation = target_angle
             
             # Generate response BEFORE spinning animation
-            with st.spinner("✨ Preparing your explanation..."):
+            with st.spinner("✨ Preparing your model..."):
                 st.session_state.response = response_to_user(topic, st.session_state.selected_style)
             
             # Start spinning
