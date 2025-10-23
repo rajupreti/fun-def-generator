@@ -41,11 +41,11 @@ def response_to_user(topic, model_response):
         """
 
     response = client.chat.complete(
-        model="mistral-small-latest",
+        model="mistral-large-latest",
         messages=[
             {"role": "system", "content": "You are a creative and humorous teacher who makes explanations enjoyable and accessible. Keep it under 300 tokens."},
             {"role": "user", "content": prompt}
-        ],
+        ],max_tokens=350
     )
     return response.choices[0].message.content
 
