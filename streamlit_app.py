@@ -47,7 +47,6 @@ def response_to_user(topic, model_response):
             {"role": "system", "content": "You are a creative and humorous teacher who makes explanations enjoyable and accessible. Keep it under 300 tokens."},
             {"role": "user", "content": prompt}
         ],
-        max_tokens=300
     )
     return response.choices[0].message.content
 
