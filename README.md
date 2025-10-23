@@ -2,8 +2,6 @@
 
 A creative AI-powered tool that explains topics in various entertaining styles using Mistral AI. Turn any topic into a recipe, haiku, love letter, or even a Shakespearean monologue!
 
-[![Python application](https://github.com/rajupreti/fun-def-generator/actions/workflows/python-app.yml/badge.svg)](https://github.com/rajupreti/fun-def-generator/actions)
-
 ## Features
 
 - 💬 Clean chat interface with message history
