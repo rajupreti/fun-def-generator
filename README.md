@@ -1,6 +1,8 @@
-# Mistral AI Chat Interface
+# Fun Definition Generator
 
-A Streamlit-based chat interface for the Mistral AI API, featuring both standard chat and creative response styles.
+A creative AI-powered tool that explains topics in various entertaining styles using Mistral AI. Turn any topic into a recipe, haiku, love letter, or even a Shakespearean monologue!
+
+[![Python application](https://github.com/rajupreti/fun-def-generator/actions/workflows/python-app.yml/badge.svg)](https://github.com/rajupreti/fun-def-generator/actions)
 
 ## Features
 
@@ -15,8 +17,8 @@ A Streamlit-based chat interface for the Mistral AI API, featuring both standard
 
 1. Clone the repository:
 ```bash
-git clone <your-repo-url>
-cd <repo-name>
+git clone https://github.com/rajupreti/fun-def-generator.git
+cd fun-def-generator
 ```
 
 2. Create and activate a virtual environment:
