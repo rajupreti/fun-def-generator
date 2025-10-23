@@ -8,7 +8,6 @@ import math
 
 load_dotenv()
 api_key = os.getenv("MISTRAL_API_KEY")
-model = "mistral-small-latest"
 
 spin_the_wheel = [
     "as a cooking recipe",
@@ -42,7 +41,7 @@ def response_to_user(topic, model_response):
         """
 
     response = client.chat.complete(
-        model=model,
+        model="mistral-small-latest",
         messages=[
             {"role": "system", "content": "You are a creative and humorous teacher who makes explanations enjoyable and accessible. Keep it under 300 tokens."},
             {"role": "user", "content": prompt}
